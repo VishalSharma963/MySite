@@ -1,0 +1,19 @@
+#tc{
+	background : linear-gradient(#08b5cc,rgb(100,24,254));
+	color: aqua;
+	text-shadow: 4px 4px 2px #08b5cc;
+	font: fantasy;
+	font-weight: bold;
+	padding: 20px;
+	border-radius: 10px;
+}
+.condition{
+	padding: 40px;
+}
+.btn{
+	color: yellow;
+	padding: 10px;
+}
+.btn:hover{
+	color: yellow;	
+}

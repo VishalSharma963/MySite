@@ -4,15 +4,15 @@
 	<meta charset='utf-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>BMNV Tech</title>
-	<link rel="icon" href="bmnvtech.png" type="image/icon type">
+	<link rel="icon" href="image/bmnvtech.png" type="image/icon type">
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">    
-	<link rel="stylesheet" href="bmnv.css">    
+	<link rel="stylesheet" href="css/bmnv.css">    
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<link rel="stylesheet" type="text/css" href="wow.min.js">
+	<link rel="stylesheet" type="text/css" href="js/wow.min.js">
 </head>
-<body>   
+<body style="background-image: url('image/back.png');">   
 	<!-- NAV SECTION --> 
 	<div class="nav-div">            
 		<div style="display: flex; align-content: flex-end; justify-content: flex-end; float: right;">
@@ -24,8 +24,7 @@
 			<table>
 				<tr><a href="#">Home</a></tr>
 				<tr><a href="#services">Services</a></tr>
-				<tr><a href="#contact">Contact</a></tr>
-				<tr><a href="#download">Download</a></tr>
+				<tr><a href="#contact">Contact</a></tr>				
 			</table>
 		</div>
 
@@ -34,15 +33,14 @@
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#services">Services</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="#download">Download</a></li>
+				<li><a href="#contact">Contact</a></li>				
 			</ul>
 		</div>
 	</div>         
 
 	<!-- IMAGE SECTION -->
 	<div class="main-div" style="width: 100%; height: 80vh;">    	
-		<img src="bmnvtech.png" id="img">    	
+		<img src="image/bmnvtech.png" id="img">    	
 	</div>
 
 	<!-- SERVICES SECTION -->
@@ -50,18 +48,18 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="card text-center col-sm-12" style="width: 18rem;">                        
-					<img class="card-img-top" src="web app.png" alt="Card image cap">
+					<img class="card-img-top" src="image/web app.png" alt="Card image cap">
 					<div class="card-body">                                                    
-						<a href="#" class="btn btn-outline-primary">Start Building</a>
+						<a href="html/order.html" class="btn btn-outline-primary">Start Building</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-md-6">
 				<div class="card text-center" style="width: 18rem; ">                        
-					<img class="card-img-top" src="android app.png" alt="Card image cap">
+					<img class="card-img-top" src="image/android app.png" alt="Card image cap">
 					<div class="card-body">
-						<a href="#" class="btn btn-outline-success">Start Building</a>
+						<a id="b" href="html/order.html" class="btn btn-outline-success">Start Building</a>
 					</div>
 				</div>      
 			</div>
@@ -82,15 +80,16 @@
 
 			<div class="ro mb-5 text-center">
 				<div class ="bg-danger p-5">                    
-					<h1>                        
-						<i class="fas fa-envelope"></i>
-						<h4>bmnvcompany7860 @gmail.com</h4>
+					<h1 id="gmail" style="font-family: initial;">                        
+						<i class="fas fa-envelope"></i><br>
+						bmnvcompany7860@gmail.com
 					</h1>
 				</div>
 
 				<div class="bg-warning p-5">
 					<h1>                        
-						<i class="fab fa-whatsapp"></i><br>+91 9026349383
+						<i class="fab fa-whatsapp"></i><br>
+						+91 9026349383
 					</h1>
 				</div>
 			</div>			
@@ -107,17 +106,28 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script type="text/javascript">            
 		$(document).ready(function () {                        
-
-			$('#services').click(function(){
-
+			$('.card').mouseover(function(){
+				$(this).addClass('animate__animated animate__rubberBand');
 			});
+			$('footer').mouseover(function(){
+				$(this).addClass('animate__animated animate__rotateInDownRight');
+			});
+			$('h1 , h4').mouseover(function(){
+				$(this).addClass('animate__animated animate__heartBeat');
+			});
+			$('h1 , h4').mouseout(function(){
+				$(this).removeClass('animate__animated animate__heartBeat');
+			});
+			
 			$('a').mouseover(function(){
 				$(this).addClass('animate__animated animate__jello');
-			})
+			});			
 			$('a').mouseout(function(){
 				$(this).removeClass('animate__animated animate__jello');
-			})
+			})			
+
 			if (window.matchMedia('(max-width: 767px)').matches) {                
+				$('#gmail').addClass("h6");
 				$('#i').css("margin-left" ,"8%");
 				$('.menu').hide();                
 				$('#bar').show();

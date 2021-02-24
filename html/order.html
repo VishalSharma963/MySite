@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Place Order...</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">   
+	<link rel="stylesheet" type="text/css" href="../css/order.css">
+</head>
+<body>
+	<div class="main-div container">
+		<form action="" method="get">
+			<h1>ORDER CONFIRMATION</h1><hr>
+			<div class="form-group mt-2">
+				<span>*</span>
+				<label for="exampleFormControlInput1">Name</label>
+				<input type="text" required="required" class="form-control" id="name" placeholder="Please Enter your name..">
+			</div>
+
+			<div class="form-group mt-2">
+				<span>*</span>
+				<label for="exampleFormControlInput1">Mobile</label>
+				<input type="number" required="required" class="form-control" id="mobile" placeholder="Please Enter your mobile no.">
+			</div>
+
+			<div class="form-group mt-2">
+				<span>*</span>
+				<label for="exampleFormControlInput1">Email</label>
+				<input type="email" required="required" class="form-control" id="email" placeholder="Please Enter your Email">
+			</div>
+
+			<div class="form-group mt-3">
+				<span>*</span>
+				<label for="exampleFormControlSelect1">Please select one</label>
+				<select class="form-control" id="select" required="required">
+					<option selected="selected">--Select--</option>
+					<option>Android</option>
+					<option>Website</option>
+					<option>Both</option>
+				</select>
+			</div>
+
+			<div class="form-group mt-3">
+				<label>Select your app/site template...</label>
+				<input class="form-control" type="file" name="img">
+			</div>
+
+			<div class="form-group mt-3">
+				<label for="exampleFormControlTextarea1">Write something</label>
+				<textarea class="form-control" id="ta" rows="3"
+				placeholder="Write something your app/Website....." 
+				></textarea>
+			</div>
+
+			<p class="mt-2">
+				<input required="required" type="checkbox" name="">
+				<label>Accept 
+					<a href="term-&-condition.html">term & condition</a>
+					<span>*</span>
+				</label>
+			</p>
+
+			<div class="btn-back bg-dark p-3">
+				<button type="Submit" class="btn btn-outline-primary form-control mt-3">Submit</button>
+			<button type="reset" class="btn btn-outline-danger form-control mt-3">reset</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
