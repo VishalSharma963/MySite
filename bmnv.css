@@ -1,0 +1,105 @@
+#img{    
+    width: 100%;
+    height: 70vh;
+    background-size: cover;            
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.nav-div{
+    padding: 20px;       
+    position: sticky;    
+    width: 100%;
+}
+.nav-div ul li{
+    list-style: none;    
+}
+#com{
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 10px;    
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+#com:hover{
+    background-color: aqua;
+    cursor: pointer;    
+    transition: 1s;
+}
+.menu{    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu, table ,tr, a{
+    color: white;    
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;  
+    font-size: 20px;
+}
+a:hover{
+    color: rgb(231, 235, 10);    
+    font-weight: bold;        
+    font-size: 20px;
+    text-decoration: underline;    
+}
+.nav-div{
+    background: rgb(0, 0, 0,.5);
+}
+.start{    
+    z-index: 9;
+    margin-top: 10%;
+    color: white;
+    background: rgb(0, 0, 0,.5);    
+    position: absolute;    
+}
+.cont{    
+    clip-path: ellipse(35% 65% at 14% 56%);
+    background: linear-gradient(red,yellow);
+    height: 500px;
+    width: 100%;        
+}
+body{
+    background-image: url(back.png);     
+    background-size: 30%;
+}
+#services{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+    background : linear-gradient(yellow,red);
+}
+.card{
+    margin: 20px;
+}
+.card a{
+    font-size: 20px;
+    font-weight: bold;
+}
+#download{
+    background: linear-gradient(yellow,rgba(96, 209, 230));
+}
+.download-app{    
+    padding: 10px;
+    color: #000;
+    font-family: initial;
+}
+.download-app:hover{            
+    cursor: pointer;        
+    color: #255784;
+    background: aqua;
+    box-shadow: 0 0 10px aqua, 0 0 40px aqua, 0 0 80px aqua;
+    text-decoration: blink;    
+}
+#contact{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+h1 , h6{
+    font-family: cursive;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;    
+}
